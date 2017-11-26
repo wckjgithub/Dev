@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => '©Ñ¹¨Ð¨ÓäÇé'
+				'text' => 'pop test'
 				//'text' => $text
 			];
 
