@@ -23,12 +23,18 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			switch ($text) {
 			case "text" : 
-				$messages = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("text message");
+				$messages = [
+				'type' => 'text',
+				'text' => $text
+				];
 				break;
-			//$messages = [
-			//	'type' => 'text',
-			//	'text' => $text
-			//];
+			case "demo" : 
+				$messages = [
+				'type' => 'text',
+				'text' => 'Remember...'.$text
+				];
+				break;
+			}
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
