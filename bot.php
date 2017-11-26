@@ -34,6 +34,12 @@ if (!is_null($events['events'])) {
 				'text' => 'Remember...'.$text
 				];
 				break;
+			default : 
+				$messages = [
+				'type' => 'text',
+				'text' => 'ฉันจะจดจำเรื่องที่คุณพูด..."'.$text.'"'
+				];
+				break;
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
