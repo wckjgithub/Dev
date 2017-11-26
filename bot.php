@@ -37,7 +37,8 @@ if (!is_null($events['events'])) {
 			default : 
 				$messages = [
 				'type' => 'text',
-				'text' => 'ฉันจะจดจำเรื่องที่คุณพูด..."'.$text.'"'
+				//'text' => 'ฉันจะจดจำเรื่องที่คุณพูด...'.$text.''
+				'text' => 'pop...'.$text.''
 				];
 				break;
 			}
