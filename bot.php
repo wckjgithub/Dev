@@ -13,14 +13,14 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-			$userId = $event['message']['userId']
+			$username = $event['message']['username']
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $userId.'pop test'
+				'text' => $username.'pop test'
 				//'text' => $text
 			];
 
