@@ -35,11 +35,10 @@ if (!is_null($events['events'])) {
 				];
 				break;
 			default : 
-				$messages = [
-				'type' => 'text',
-				//'text' => 'ฉันจะจดจำเรื่องที่คุณพูด...'.$text.''
-				'text' => 'Note...'.$text.' 5555 '
-				];
+				//$messages = [
+				//'type' => 'text',
+				//'text' => 'Note...'.$text.' 5555 '
+				//];
 				break;
 			}
 
